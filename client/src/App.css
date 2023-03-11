@@ -1,0 +1,499 @@
+*{
+  margin: 0%;
+  padding: 0%;
+}
+/* body{
+  margin: 0%;
+  padding: 0%;
+} */
+.Home
+{
+  width:95%;
+  margin:auto;
+  
+  display:flex;
+ justify-content: space-between;
+}
+
+.Left
+{
+  width:20%;
+  display:flex;
+  flex-direction: column;
+} 
+.Sidebar
+{
+  padding:15px;
+  
+}
+.Sidebar1,.Sidebar2,.Sidebar3,.Sidebar4,.Sidebar5
+{
+  display:flex;
+  flex-direction: column;
+  align-content: space-between;
+  margin: 14% 0%;
+}
+.NavLink
+{
+  text-decoration: none;
+  color: black;
+  margin: 5% 0%;
+}
+
+.Right
+{
+  width:80%;
+  /* margin-left: 1%; */
+} 
+.Mainbody1
+{
+  display:flex;  
+  flex-wrap:wrap;
+}
+.Mainbody2
+{
+  margin: 1% 0%;
+  margin-right: 1%;
+}
+.VideoScreen_Mainbody2
+{
+  width: 100%;
+  margin: auto;
+}
+.Mainbody3
+{
+  display: flex;
+  justify-content:space-between;
+  margin-top: 4%;
+}
+.Mainbody4
+{
+  margin-left: 3%;
+}
+  
+.Mainbody4_title
+{
+  font-weight: bold;
+}
+.Mainbody4_channel
+{
+  font-weight:lighter;
+}
+.Mainbody5
+{
+  display: flex;
+  margin-top: 1%;
+  width: 200px;
+}
+.Mainbody5_views
+{
+  font-weight:lighter;
+  margin-right: 2%;
+}
+.Mainbody5_uploadTime
+{
+  font-weight:lighter;
+  margin-left: 2%;
+}
+
+.thumbnail_Img
+{
+  /* border:2px solid red; */
+  height:200px;
+  width:300px;
+  /* height:100%; */
+  /* width:99%; */
+  display: block;
+}
+
+.dp_Img
+{
+  height:30px;
+  width:30px;
+  border-radius: 20px;
+  
+  /* border:2px solid; */
+
+}
+.uploadForm
+{
+  width:90%;
+  margin: auto;
+  padding: 10%;
+
+  /* border: 2px solid; */
+}
+.uploadForm input{
+  display: block;
+  margin: 2% 0%;
+}
+.uploadForm .input,.uploadForm textarea
+{
+  display: block;
+  margin: 2% 0%;
+  width: 100%;
+  padding: 12px;
+  border-radius: 2px;
+}
+
+.VideoScreen2
+{
+  display:flex;
+  /* justify-content: space-around; */
+}
+.VideoScreenBody
+{
+  display:flex;
+  justify-content: space-around;
+  /* border:2px solid green; */
+  width: 100%;
+}
+.VideoScreenBody_Left
+{
+  width:50%;
+}
+/* .VideoScreenBody_Right
+{
+ margin-right:1%;
+} */
+.VideoScreen4
+{
+  display: flex;
+  justify-content: space-between;
+}
+.VideoScreen3 button
+{
+  margin-right: 1%;
+}
+#Subscribe
+{
+  margin-right: 2%;
+  width:100px;
+  outline:none;
+  border:none;
+  background-color: red;
+  color: white;
+  padding: 7px;
+  border-radius: 5px;
+  transition: all .8s;
+}
+#signin
+{
+  margin-right: 2%;
+  /* width:100px; */
+  outline:none;
+  border:none;
+  background-color: red;
+  color: white;
+  padding: 7px;
+  border-radius: 5px;
+  transition: all .8s;
+}
+#Subscribe:hover,#signin:hover
+{
+  background-color: rgba(255, 0, 0, 0.881);
+  color: black;
+}
+#Comment
+{
+  margin-right: 2%;
+  width:100px;
+  outline:none;
+  border:none;
+  background-color: lightgrey;
+  color: black;
+  /* padding: 7px; */
+  border-radius: 5px;
+  transition: all .2s;
+  margin-left: 5%;
+}
+#Comment:hover
+{
+  background-color: rgba(211, 211, 211, 0.83);
+  color: black;
+}
+.SettingsMain1
+{
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px solid red; */
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+.SettingsMain1_h1{
+    /* margin: 1% 0%; */
+ color:black;
+}
+.SettingsMain1_h4{
+color: red;
+}
+.SettingsMain2
+{
+    /* display: flex; */
+    flex-direction: column;
+    align-content: space-around;
+    padding: 10px;
+    width: 90%;
+    margin: auto;
+    
+}
+.SettingsMain2 input
+{
+    border: none;
+    outline: none;
+    padding: 4px 0px;
+    margin: 1% 0%;
+    border-bottom: 2px solid black;
+    text-align: center;
+}
+.SettingsMain2 img {
+    border-radius: 20px;
+    margin: 3% 0%;
+    margin-top: 0%;
+}
+.SettingsMain2_profile
+{
+    display: flex;
+    /* jus */
+    /* align-items:center; */
+    /* justify-content: center; */
+}
+
+
+.SettingsMain1
+{
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px solid red; */
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+.SettingsMain1_h1{
+    /* margin: 1% 0%; */
+ color:black;
+}
+.SettingsMain1_h4{
+color: red;
+}
+.SettingsMain2
+{
+    /* display: flex; */
+    flex-direction: column;
+    align-content: space-around;
+    padding: 10px;
+    width: 90%;
+    margin: auto;
+    
+}
+.SettingsMain2 input
+{
+    border: none;
+    outline: none;
+    padding: 4px 0px;
+    margin: 1% 0%;
+    border-bottom: 2px solid black;
+}
+.SettingsMain2 img {
+    border-radius: 20px;
+    margin: 3% 0%;
+    margin-top: 0%;
+}
+.SettingsMain2_profile
+{
+    display: flex;
+    /* jus */
+    /* align-items:center; */
+    /* justify-content: center; */
+}
+#Like,#DisLike
+{
+  cursor: pointer;
+}
+#DeleteAccount,#SignOut{
+  background-color: red;
+  color: white;
+  padding: 7px;
+  border-radius: 5px;
+  border: none;
+  margin-top: 2%;
+  transition: all .8s; 
+}
+#Update{
+  /* background-color:green; */
+  /* color: white; */
+  padding: 7px;
+  border-radius: 5px;
+  border: none;
+  margin-top: 2%;
+  /* transition: all .8s;  */
+  /* border-radius: 20px; */
+  display:flex;
+  justify-content:center;
+  text-align: center;
+  margin: auto;
+  /* "width":"160px","textAlign":"center","backgroundColor":"green","color":"white","padding":"4px","margin":"auto","display":"flex", */
+  border: 1px solid green;
+  color:green;
+}
+#Update:hover
+{
+ color: white;
+ background-color:green;
+}
+#DeleteAccount:hover,#SignOut:hover
+{
+  background-color: rgba(255, 0, 0, 0.881);
+  color: black;
+}
+
+@media(max-width:600px)
+
+{
+  .VideoScreen4
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+  .VideoScreenBody
+{
+  flex-direction: column;
+  padding: 5% 1%;
+}
+  .thumbnail_Img
+  {
+    height:200px;
+    width:98%;
+    display: block;
+  }
+  .Sidebar1,.Sidebar2,.Sidebar3,.Sidebar4,.Sidebar5
+  {
+  display:flex;
+  flex-direction: column;
+  align-content: space-between;
+  margin: 2% 0%;
+  }
+  .Sidebar
+{
+  padding:0px;
+}
+.Mainbody1
+{
+  display:flex;  
+  flex-direction:column;
+}
+.VideoScreenBody_Left
+{
+  width:90%;
+}
+.Mainbody4
+{
+  margin-left: 0%;
+}
+#Comment
+{
+  margin-left: 0%;
+}
+#Subscribe
+{
+  margin-bottom:2%;
+}
+}
+/* .Login */
+/* { */
+  /* border:2px solid saddlebrown; */
+  /* background-color: lemonchiffon; */
+/* } */
+.Login input
+{
+  width: 80%;
+  padding: 10px;
+  
+}
+/* /////////////////////New Settings */
+body{
+  background:#eee;
+}
+
+.card{
+  border:none;
+
+  position:relative;
+  overflow:hidden;
+  border-radius:8px;
+  cursor:pointer;
+}
+
+.card:before{
+  
+  content:"";
+  position:absolute;
+  left:0;
+  top:0;
+  width:4px;
+  height:100%;
+  background-color:#E1BEE7;
+  transform:scaleY(1);
+  transition:all 0.5s;
+  transform-origin: bottom
+}
+
+.card:after{
+  
+  content:"";
+  position:absolute;
+  left:0;
+  top:0;
+  width:4px;
+  height:100%;
+  background-color:#8E24AA;
+  transform:scaleY(0);
+  transition:all 0.5s;
+  transform-origin: bottom
+}
+
+.card:hover::after{
+  transform:scaleY(1);
+}
+
+
+.fonts{
+  font-size:11px;
+}
+
+.social-list{
+  display:flex;
+  list-style:none;
+  justify-content:center;
+  padding:0;
+}
+
+.social-list li{
+  padding:10px;
+  color:#8E24AA;
+  font-size:19px;
+}
+
+
+.buttons button:nth-child(1){
+     border:1px solid #8E24AA !important;
+     color:#8E24AA;
+     height:40px;
+}
+
+.buttons button:nth-child(1):hover{
+     border:1px solid #8E24AA !important;
+     color:#fff;
+     height:40px;
+     background-color:#8E24AA;
+}
+
+.buttons button:nth-child(2){
+     border:1px solid #8E24AA !important;
+     background-color:#8E24AA;
+     color:#fff;
+      height:40px;
+}
+

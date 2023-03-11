@@ -1,0 +1,82 @@
+export let Data=[
+    {
+        // thumbnail:"data:image/jpeg;base64,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.png",
+        // images/shirt.p.jpgng
+        thumbnail:"./images/Thumbnail1.png",
+        dp:"/images/1.jpg",
+        title:"Let the Holiday Start",
+        video:"https://www.t20worldcup.com/video/2327413",
+        id:0,
+        channel:"cofee cake",
+        views:"922 views -",
+        uploadTime:"2 hours ago",
+        description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa non doloremque, vitae numquam laboriosam temporibus odit officia voluptates eius distinctio beatae magnam nulla ducimus libero. Nobis, cupiditate natus incidunt officia commodi fugiat quis, at reiciendis debitis dignissimos repudiandae quasi quidem voluptates. Ducimus totam rerum nostrum laboriosam earum, porro mollitia nam dignissimos ipsum excepturi blanditiis a iste. Iusto dolores sequi culpa.",
+        subscriber:"120k subscribers",
+        comment:"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos, obcaecati."
+    },
+    {
+        thumbnail:"images/Thumbnail2.png",
+        dp:"images/2.jpg",
+        title:"Database syllabus",
+        video:"https://www.t20worldcup.com/video/2327413",
+        id:1,
+        channel:"Gate smashers",
+        views:"122 views -",
+        uploadTime:"3 hours ago",
+        description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa non doloremque, vitae numquam laboriosam temporibus odit officia voluptates eius distinctio beatae magnam nulla ducimus libero. Nobis, cupiditate natus incidunt officia commodi fugiat quis, at reiciendis debitis dignissimos repudiandae quasi quidem voluptates. Ducimus totam rerum nostrum laboriosam earum, porro mollitia nam dignissimos ipsum excepturi blanditiis a iste. Iusto dolores sequi culpa.",
+        subscriber:"120k subscribers",
+        comment:"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos, obcaecati."
+    },
+    {
+        thumbnail:"images/Thumbnail3.png",
+        dp:"images/3.jpg",
+        title:"Islamic heroes",
+        video:"https://www.t20worldcup.com/video/2327413",
+        id:2,
+        channel:"Kayi tribe",
+        views:"1922 views -",
+        uploadTime:"2 hours ago",
+        description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa non doloremque, vitae numquam laboriosam temporibus odit officia voluptates eius distinctio beatae magnam nulla ducimus libero. Nobis, cupiditate natus incidunt officia commodi fugiat quis, at reiciendis debitis dignissimos repudiandae quasi quidem voluptates. Ducimus totam rerum nostrum laboriosam earum, porro mollitia nam dignissimos ipsum excepturi blanditiis a iste. Iusto dolores sequi culpa.",
+        subscriber:"120k subscribers",
+        comment:"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos, obcaecati."
+    },
+    {
+        thumbnail:"images/Thumbnail8.png",
+        dp:"images/4.jpg",
+        title:"Can AI take your job?",
+        video:"https://www.t20worldcup.com/video/2327413",
+        id:3,
+        channel:"comp science community",
+        views:"922 views -",
+        uploadTime:"2 hours ago",
+        description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa non doloremque, vitae numquam laboriosam temporibus odit officia voluptates eius distinctio beatae magnam nulla ducimus libero. Nobis, cupiditate natus incidunt officia commodi fugiat quis, at reiciendis debitis dignissimos repudiandae quasi quidem voluptates. Ducimus totam rerum nostrum laboriosam earum, porro mollitia nam dignissimos ipsum excepturi blanditiis a iste. Iusto dolores sequi culpa.",
+        subscriber:"20k subscribers",
+        comment:"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos, obcaecati."
+    },
+    {
+        thumbnail:"images/Thumbnail13.png",
+        dp:"images/5.jpg",
+        title:"My first Vlog",
+        video:"https://www.t20worldcup.com/video/2327413",
+        id:4,
+        channel:"Fawad",
+        views:"522 views -",
+        uploadTime:"1 hour ago",
+        description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa non doloremque, vitae numquam laboriosam temporibus odit officia voluptates eius distinctio beatae magnam nulla ducimus libero. Nobis, cupiditate natus incidunt officia commodi fugiat quis, at reiciendis debitis dignissimos repudiandae quasi quidem voluptates. Ducimus totam rerum nostrum laboriosam earum, porro mollitia nam dignissimos ipsum excepturi blanditiis a iste. Iusto dolores sequi culpa.",
+        subscriber:"12k subscribers",
+        comment:"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos, obcaecati."
+    },
+    {
+        thumbnail:"images/Thumbnail14.png",
+        dp:"images/6.jpg",
+        title:"Pak v SL 2015",
+        video:"https://www.t20worldcup.com/video/2327413",
+        id:5,
+        channel:"pcb",
+        views:"9122 views -",
+        uploadTime:"2 hours ago",
+        description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa non doloremque, vitae numquam laboriosam temporibus odit officia voluptates eius distinctio beatae magnam nulla ducimus libero. Nobis, cupiditate natus incidunt officia commodi fugiat quis, at reiciendis debitis dignissimos repudiandae quasi quidem voluptates. Ducimus totam rerum nostrum laboriosam earum, porro mollitia nam dignissimos ipsum excepturi blanditiis a iste. Iusto dolores sequi culpa.",
+        subscriber:"120k subscribers",
+        comment:"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos, obcaecati."
+    },
+]

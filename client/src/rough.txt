@@ -1,0 +1,113 @@
+import React,{useState} from 'react'
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+import { getFirestore, collection, getDocs } from 'firebase/firestore/lite';
+import { getDatabase } from "firebase/database";
+
+const Upload = () => {
+    let [state1,updateState1]=useState();
+    let [state2,updateState2]=useState();
+    ///////////////////////////Firebase////////////////////////
+    /// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+    // The value of `databaseURL` depends on the location of the database
+//   databaseURL: "https://DATABASE_NAME.firebaseio.com",
+  databaseURL: "https://faw-tube-default-rtdb.firebaseio.com/",
+    apiKey: "AIzaSyA3c3uuaKnzK1RwVgzNmunAuNyPyYLBYBQ",
+    authDomain: "faw-tube.firebaseapp.com",
+    projectId: "faw-tube",
+    storageBucket: "faw-tube.appspot.com",
+    messagingSenderId: "533332433118",
+    appId: "1:533332433118:web:d189e4871655765f13ca4f",
+    measurementId: "G-QG0DZXW9WN"
+  };
+  // Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+
+const db = getFirestore(app);
+
+// Get a list of cities from your database
+async function getCities(db) {
+  const citiesCol = collection(db, 'cities');
+  const citySnapshot = await getDocs(citiesCol);
+  const cityList = citySnapshot.docs.map(doc => doc.data());
+  return cityList;
+}
+
+
+
+// TODO: Replace the following with your app's Firebase project configuration
+// See: https://firebase.google.com/docs/web/learn-more#config-object
+// const firebaseConfig = {
+//   // ...
+//   // The value of `databaseURL` depends on the location of the database
+//   databaseURL: "https://DATABASE_NAME.firebaseio.com",
+// };
+
+// Initialize Firebase
+// const app = initializeApp(firebaseConfig);
+
+
+// Initialize Realtime Database and get a reference to the service
+const database = getDatabase(app);
+
+
+
+    let inputEventImg = (e)=>{
+        console.log(e.target);
+        console.log(e.target.name);
+        console.log(e.target.value);
+        console.log(e.target.files);
+        console.log(e.target.files[0]);
+        // console.log(e.target.files[0].name);
+        // updateState1(e.target.files[0]);
+        updateState1({...state1,[e.target.name]:e.target.files[0]})
+        console.log('state1');
+        console.log(state1);
+        ///////////////////////////read file////////////////////////
+        //      const reader = new FileReader();
+    //   reader.addEventListener("load", () => {
+        //     console.log(reader.result);
+        //     updateState1(reader.result);
+    //   });
+    //   reader.readAsDataURL(e.target.files[0]);
+    
+
+    }
+    let inputEvent = (e)=>{
+        console.log(e.target);
+        console.log(e.target.name);
+        console.log(e.target.value);
+        updateState2({...state2,[e.target.name]:e.target.value})
+        console.log('state2');
+        console.log(state2);
+    }
+    
+    return (
+        <>
+            <div >
+                <form className='uploadForm' action="" method="post">
+                    <h1>Upload a new video</h1>
+                    <label htmlFor="">Video:</label>
+                    <input type="file" name="video" id="video" onChange={inputEventImg} />
+                    <input type="text" onChange={inputEvent} placeholder='Video Title' name="videoTitle" id="videoTitle" />
+                    <textarea onChange={inputEvent}  placeholder='Video Description' name="videoDescription" id="videoDescription" cols="30" rows="10"></textarea>
+                    <input type="text" onChange={inputEvent}  placeholder='separare tags with commas' name="tags" id="tags" />
+                    <label htmlFor="">ThumbNail:</label>
+                    <input type="file" name="image" id="image" onChange={inputEventImg} />
+                    {/* <img src={state1} alt="" /> */}
+                    <input type="submit" value="Upload" id='UploadBtn' />
+                </form>
+
+            </div>
+        </>
+    )
+}
+
+export default Upload
