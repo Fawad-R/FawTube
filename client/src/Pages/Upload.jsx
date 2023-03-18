@@ -160,7 +160,7 @@ useEffect(()=>{
                     <label htmlFor="">ThumbNail:</label>
                     <input type="file" name="image" id="image" accept="image/*" onChange={inputEventImg2} />
                     Upload is  {Math.round(state8)}  % done
-                    {state7 ===100 && state8===100? <input className='input' type="submit" value="Upload" onClick={SubmitBtn} id='UploadBtn' />:"Waiting for video and img to upload"}
+                    {state7 ===100 && state8===100? <input className='input' type="submit" value="Upload" onClick={SubmitBtn} id='UploadBtn' />:"Waiting for video and img to upload"} <br />
                     <img src={state6} alt="" />
                 </form>
 

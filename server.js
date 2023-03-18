@@ -15,8 +15,8 @@ app.use(express.json());
 app.use(express.static(path.join(__dirname,"./client/build")));
 app.use(cookieParser())
 // db
-mongoose.connect('mongodb://localhost:27017/FawTubeMERN');
-// mongoose.connect('mongodb+srv://Fawad:QqfgVdAqJGQoY9zE@cluster0.2sico1z.mongodb.net/?retryWrites=true&w=majority');
+// mongoose.connect('mongodb://localhost:27017/FawTubeMERN');
+mongoose.connect('mongodb+srv://Fawad:QqfgVdAqJGQoY9zE@cluster0.2sico1z.mongodb.net/?retryWrites=true&w=majority');
 // schema
 
 
@@ -331,8 +331,10 @@ app.get('/subscribedUsers',async(req,res)=>{
 app.get('/videos/:id',async(req,res)=>{
     try {
         // console.log('req.params.id',req.params.id);
-        // console.log(req.params.id)
+        console.log(req.params.id)
         let val =await videoModel.findOne({_id:req.params.id})
+        console.log('/videos/val',val)
+
         // console.log(req.params.id)
         // if(val.userId===req.user.id)
         // {

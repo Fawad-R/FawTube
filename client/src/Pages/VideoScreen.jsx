@@ -27,6 +27,7 @@ const VideoScreen = () => {
   let [state7, updateState7] = useState({videoId:'',desc:''});
   let [state8, updateState8] = useState();
   let [state9, updateState9] = useState(false);
+  let [state10, updateState10] = useState([]);
   let useparamsId = useParams();
   let GoBack=()=>{
     Navigate('/')
@@ -41,6 +42,7 @@ const VideoScreen = () => {
   useEffect(() => {
     let fetchData = async () => {
       let val = await axios.get(`/videos/${useparamsId.title}`)
+      console.log('val video',val);
       updateState1(val.data);
       updateState6(val.data.likes);
     }
@@ -199,7 +201,8 @@ const VideoScreen = () => {
       let val=await axios.get(`/user/${id}`);
       // console.log(val);
       if (val.status===200) {
-        updateState1(val.data);
+        // updateState1(val.data);
+        updateState10(val.data);
       }
       else
       {
@@ -269,8 +272,8 @@ useEffect(()=>{
                         
                             {/* <img className='dp_Img' src={state1.imageUrl} alt="" /> */}
 
-                            <form action="" method="post">
-                            <input style={{ "width": "45%", "border": "none", "padding": "10px", "borderBottom": "1px solid", "marginTop": "1%" }} onChange={inputComment} type="text" placeholder='Add a comment' name="desc" id="" />
+                            <form action="" method="post" style={{"display": "flex","justifyContent": "spaceBetween"}}>
+                            <input style={{ "width": "50%", "border": "none", "padding": "10px","paddingLeft":"0px",  "borderBottom": "1px solid", "marginTop": "1%" }} onChange={inputComment} type="text" placeholder='Add a comment' name="desc" id="" />
                             <input type="submit" onClick={submitComment} id="Comment" value="Submit" />
                             </form>
 
@@ -326,7 +329,7 @@ useEffect(()=>{
                                 <img className='thumbnail_Img' src={ele.imageUrl} alt="" />
                                 {/* <img className='dp' src={ele.imageUrl} alt="" /> */}
 
-                                <a href={`/VideoScreen/${ele._id}`} className='NavLink Mainbody4_title'>{ele.videoTitle}</a>
+                                <a href={`/VideoScreen/${ele._id}`} style={{"maxWidth": "294px","display": "block"}} className='NavLink Mainbody4_title'>{ele.videoTitle}</a>
 
                                 <div className='Mainbody5'>
                                   <h6 className='Mainbody5_views'>{ele.views} views -</h6>

@@ -93,7 +93,7 @@ try {
                         </div>
                         <div className='Mainbody4'>
                           {/* <NavLink to={`/VideoScreen/${ele.id}`} className='NavLink Mainbody4_title'>{ele.title}</NavLink> */}
-                          <NavLink key={ele._id} to={`/VideoScreen/${ele._id}`} className='NavLink Mainbody4_title'>{ele.videoTitle}</NavLink>
+                          <NavLink key={ele._id} to={`/VideoScreen/${ele._id}`} style={{"width":"30px"}} className='NavLink Mainbody4_title'>{ele.videoTitle}</NavLink>
                           {/* <h6 className='Mainbody4_channel'>{state4.name}</h6> */}
                           {/* <h6 className='Mainbody4_channel'>{val[ind].channel}</h6> */}
                           
@@ -129,7 +129,7 @@ try {
                       </div>
                       <div className='Mainbody4'>
                         {/* <NavLink to={`/VideoScreen/${ele.id}`} className='NavLink Mainbody4_title'>{ele.title}</NavLink> */}
-                        <NavLink key={ele._id} to={`/VideoScreen/${ele._id}`} className='NavLink Mainbody4_title'>{ele.videoTitle}</NavLink>
+                        <NavLink key={ele._id} to={`/VideoScreen/${ele._id}`} id="Mainbody4_title" style={{"maxWidth": "192px","display": "block"}}  className='NavLink Mainbody4_title'  >{ele.videoTitle}</NavLink>
                         {/* <h6 className='Mainbody4_channel'>{state4.name}</h6> */}
                         {/* <h6 className='Mainbody4_channel'>{val[ind].channel}</h6> */}
                         
