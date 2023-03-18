@@ -91,7 +91,7 @@ try {
                       <img className='dp_Img' src={ele.imageurl} alt="" />
                           {/* <img className='dp_Img' src={ele.img} alt="" /> */}
                         </div>
-                        <div className='Mainbody4'>
+                        <div className='Mainbody4'> 
                           {/* <NavLink to={`/VideoScreen/${ele.id}`} className='NavLink Mainbody4_title'>{ele.title}</NavLink> */}
                           <NavLink key={ele._id} to={`/VideoScreen/${ele._id}`} style={{"width":"30px"}} className='NavLink Mainbody4_title'>{ele.videoTitle}</NavLink>
                           {/* <h6 className='Mainbody4_channel'>{state4.name}</h6> */}
