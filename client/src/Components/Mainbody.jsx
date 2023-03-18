@@ -84,7 +84,7 @@ try {
                     <div key={ele._id}  className='Mainbody2'>
                       {/* {console.log('ele',ele)} */}
                       {/* <img className='thumbnail_Img' src={ele.thumbnail} alt="" /> */}
-                      <img className='thumbnail_Img' src={ele.imageurl} alt="" />
+                      <img className='thumbnail_Img' style={{ "width": "227px"}} src={ele.imageurl} alt="" />
                       {/* {console.log(ele.img)} */}
                       <div className='Mainbody3'>
                         <div>
@@ -120,7 +120,7 @@ try {
                   <div   className='Mainbody2'>
                     {/* {console.log('ele2',ele)} */}
                     {/* <img className='thumbnail_Img' src={ele.thumbnail} alt="" /> */}
-                    <img className='thumbnail_Img' src={ele.imageUrl} alt="" />
+                    <img className='thumbnail_Img' style={{ "width": "227px"}} src={ele.imageUrl} alt="" />
                     {/* {console.log(ele.img)} */}
                     <div className='Mainbody3'>
                       <div>
