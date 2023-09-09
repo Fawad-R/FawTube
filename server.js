@@ -15,8 +15,10 @@ app.use(express.json());
 app.use(express.static(path.join(__dirname,"./client/build")));
 app.use(cookieParser())
 // db
+let MongoURL='mongodb+srv://Fawad:QqfgVdAqJGQoY9zE@cluster0.2sico1z.mongodb.net/?retryWrites=true&w=majority'
 // mongoose.connect('mongodb://localhost:27017/FawTubeMERN');
-mongoose.connect('mongodb+srv://Fawad:QqfgVdAqJGQoY9zE@cluster0.2sico1z.mongodb.net/?retryWrites=true&w=majority');
+// mongoose.connect('mongodb+srv://Fawad:QqfgVdAqJGQoY9zE@cluster0.2sico1z.mongodb.net/?retryWrites=true&w=majority');
+mongoose.connect(MongoURL);
 // schema
 
 
